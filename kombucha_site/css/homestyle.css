@@ -1,0 +1,362 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-color: rgb(251, 176, 80);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.header img {
+    max-width: 190px;
+    max-height: 55;
+}
+
+.header-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding:  0px 0px 0px 0px;
+}
+
+.header-list li {
+    margin: 0 2%;
+}
+
+.header-list li:first-child {
+    margin-right: auto;
+}
+
+.header-list li a {
+    font-size: 24px;
+    color: #87234c;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: rgb(251, 176, 80);
+    color: #87234c;
+    padding: 30px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer ul li {
+    margin: 10px 0;
+    font-size: 16px;
+    flex: 1;
+    text-align: left;
+}
+
+.footer ul li strong {
+    font-weight: bold;
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.footer ul li a {
+    color: #87234c;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    padding: 200px 20px;
+}
+
+.section h2 {
+    color: #87234c;
+}
+
+.saibamais {
+    background-color: #87234c;
+    position: relative;
+    border-bottom: 16px solid rgb(251, 176, 80);
+    border-top: 16px solid rgb(251, 176, 80);
+}
+
+
+.saibamais h2,
+.saibamais h3 {
+    color: white;
+}
+
+.icone-saibamais {
+    position: absolute;
+    bottom: 10px; 
+    right: 10px; 
+    width: 300px; 
+    height: auto; 
+}
+
+.ondecomprar {
+    background-color: white;
+    position: relative;
+    padding: 100px;
+}
+
+.top-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px; 
+}
+
+.icone-ondecomprar {
+    width: 400px; 
+    height: auto;
+    margin-right: 200px; 
+}
+
+.text-container {
+    flex: 1;
+}
+
+.ondecomprar h2 {
+    color: #000004;
+    margin-top: 0;
+}
+
+.ondecomprar p {
+    color: #000004;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.publi-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.publi {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sobrenos {
+    background-color: #87234c;
+    border-top: 16px solid rgb(251, 176, 80);
+    border-bottom: 16px solid rgb(251, 176, 80);
+}
+
+.icone-sobrenos {
+    position: relative;
+    bottom: 15px; 
+    left: 70%; 
+    width: 300px; 
+    height: auto; 
+}
+
+.sobrenos h2 {
+    color: white;
+}
+
+.blog {
+    background-color: white;
+    position: relative;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.icone-blog {
+    width: 380px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.blog h2 {
+    padding-left: 10%;
+    margin-top: 0;
+    color: #000004;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.closeBtn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #87234c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* dor de cabeça*/
+
+.carousel-container {
+    max-width: 100%;
+    padding: 0;
+    margin-top: 80px;
+}
+
+.slider {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.slider-content {
+    width: 300%;
+    height: 300px;
+    display: flex;
+    transition: margin-left 1s;
+    justify-content: flex-start;
+    margin-left: 0%;
+}
+
+input[type="radio"] {
+    display: none;
+    left: 100%;
+}
+
+.slide-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.slide-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.nav-manual {
+    width: 100%;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+
+.nav-manual .manual-btn {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #87234c;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin: 0 5px;
+}
+
+.nav-manual .manual-btn:hover {
+    background-color: #87234c;
+}
+
+#radio1:checked ~ .slider-content {
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .slider-content {
+    margin-left: -100%;
+}
+
+#radio3:checked ~ .slider-content {
+    margin-left: -200%;
+}
+
+#radio1:checked ~ .nav-manual .manual-btn.manual-btn1,
+#radio2:checked ~ .nav-manual .manual-btn.manual-btn2,
+#radio3:checked ~ .nav-manual .manual-btn.manual-btn3 {
+    background-color: #87234c;
+}
+
+@media screen and (max-width: 900px) {
+    .slide-box .img-desktop {
+        display: none;
+    }
+    .slide-box .img-mobile {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .slide-box .img-desktop {
+        display: block;
+    }
+    .slide-box .img-mobile {
+        display: none;
+    }
+}

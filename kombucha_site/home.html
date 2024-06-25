@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kombucha da mina</title>
+    <link rel="stylesheet" href="css/homestyle.css">
+</head>
+<body>
+
+    <div class="header"> 
+        <ul class="header-list">
+            <li><img src="img/da mina1.png"></li>
+            <li><a href="#saibamais">O que é kombucha?</a></li>
+            <li><a href="#ondecomprar">Onde comprar?</a></li>
+            <li><a href="#sobrenos">Sobre Nós</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#login" id="openModalLink">Login</a></li>
+        </ul>
+    </div><br>
+
+    <div class="carousel-container">
+        <section class="slider">
+            <input type="radio" name="btn-radio" id="radio1" checked>
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+    
+            <div class="slider-content">
+                <div class="slide-box primeiro">
+                    <img class="img-desktop" src="" alt="slide 1">
+                    <img class="img-mobile" src="img-mobile" alt="slide 1">
+                </div>
+                <div class="slide-box">
+                    <img class="img-desktop" src="" alt="slide 2">
+                    <img class="img-mobile" src="img-mobile" alt="slide 2">
+                </div>
+                <div class="slide-box">
+                    <img class="img-desktop" src="" alt="slide 3">
+                    <img class="img-mobile" src="img-mobile" alt="slide 3">
+                </div>
+            </div>
+    
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn manual-btn1"></label>
+                <label for="radio2" class="manual-btn manual-btn2"></label>
+                <label for="radio3" class="manual-btn manual-btn3"></label>
+            </div>
+        </section>
+    </div><br>
+
+    <section id="saibamais" class="section saibamais">
+        <h2>O que é kombucha?</h2>
+        <h3>Uma bebida saudável e refrescante que combina com toda a ocasião!</h3>
+        <h3>Já bebeu kombucha hoje?</h3>
+        <img src="img/icone bebida.png" alt="icone" class="icone-saibamais">
+    </section>
+    
+    <section id="ondecomprar" class="section ondecomprar">
+        <div class="top-content">
+            <img src="img/icone bebida3.png" alt="Ícone" class="icone-ondecomprar">
+            <div class="text-container">
+                <h2>Onde comprar?</h2>
+                <p>XXXXXXXXXXXXXXXX</p>
+            </div>
+        </div>
+        <div class="publi-container">
+            <img src="img/gojou.jpeg" alt="Publicação 1" class="publi">
+            <img src="img/pub2.png" alt="Publicação 2" class="publi">
+            <img src="img/pub3.png" alt="Publicação 3" class="publi">
+        </div>
+    </section>
+    
+    <section id="sobrenos" class="section sobrenos">
+        <h2>Sobre Nós</h2>
+        <img src="img/da mina2.png" alt="icone" class="icone-sobrenos">
+    </section>
+    
+    <section id="blog" class="section blog">
+        <img src="img/icone bebida4.png" alt="icone" class="icone-ondecomprar">
+        <h2>Blog</h2>
+    </section>
+
+    <div class="footer">
+        <ul>
+            <li><strong>Onde estamos?</strong><br> Salvador - Bahia</li>
+            <li><strong>Horários</strong><br> Das 00:00 às 00:00</li>
+            <li><strong>Institucional</strong><br><a href="#fale-conosco">Fale conosco</a><br><a href="#politica_vendas">Política de vendas</a><br><a href="privacidade">Privacidade e segurança</a></li>
+            <li><strong>Social:</strong><br></li>
+        </ul>
+    </div>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Nome de Usuário:</label>
+                <input type="text" id="username" name="username" required><br>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="javascript/homescript.js"></script>
+</body>
+</html>
